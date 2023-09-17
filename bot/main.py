@@ -20,8 +20,8 @@ variables = {
     "pfad_Windows": "",
     "pfad_Linux:": "/home/pi/Python/",
 
-    "bot_key_Windows": "OTkzODY4NTc0ODgyMDI1NTMz.GaoFz3.YGITPFzMGG9sQmM_8uam9jydKfFjJEKW3bkAo8",
-    "bot_key_Linux": "MTAxNDg3OTUyODAxNjkzNzAxMA.GxRzcZ.kLajnHsIIyF3BoNHO6dXQybSB3d-sv72E-7aCs",
+    "bot_key_Windows": "",
+    "bot_key_Linux": "",
 }
 
 
@@ -253,7 +253,7 @@ async def setup_hook():
     data.data["loops"]["team_liste"]["channel"] = None
     data.data["loops"]["team_liste"]["msg_id"] = None
     data.save()
-    loop.start()
+    # loop.start()
 
 
 @client.event
@@ -2275,4 +2275,4 @@ async def loop():
             del data.data["loops"]["farming"][k]
             data.save()
 
-client.run(variable("bot_key"))
+client.run("")
