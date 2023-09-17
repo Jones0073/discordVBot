@@ -1,4 +1,1 @@
-# discordVBot
-
-
-Official UltimateV Bot
+# Official UltimateV Bot
